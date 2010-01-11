@@ -25,7 +25,7 @@ n.welch.test(power = 0.8, alpha = 0.95, mean.diff = 2, sd.est1 = 1, sd.est2 = 2.
 }
 \references{Bock J., Bestimmung des Stichprobenumfangs fuer biologische Experimente und kontrollierte klinische Studien. Oldenbourg 1998}
 \author{Ralph Scherer}
-\seealso{n.inep.t.test.neq(), n.paired.t.test(), n.inep.t.test.eq()}
+\seealso{n.indep.t.test.neq(), n.paired.t.test(), n.indep.t.test.eq()}
 \examples{
  n.welch.test(power = 0.8, alpha = 0.95, mean.diff = 2, sd.est1 = 1, sd.est2 = 2.65)
 }

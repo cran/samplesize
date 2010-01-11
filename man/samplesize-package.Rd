@@ -2,18 +2,20 @@
 \alias{samplesize-package}
 \docType{package}
 \title{
- Computes sample size for Student's t-test, Student's t-test with Welch approximation and Wilcoxon-Mann-Whitney test
+ Computes sample size for Student's t-test, Student's t-test with Welch
+ approximation and Wilcoxon-Mann-Whitney test on ordinal data
 }
 \description{
  Computes sample size for independent and paired Student's t-test,
- Student's t-test with Welch-approximation, Wilcoxon-Mann-Whitney test with and without ties
+ Student's t-test with Welch-approximation, Wilcoxon-Mann-Whitney test
+ with and without ties on ordinal data
 }
 \details{
 \tabular{ll}{
 Package: \tab samplesize\cr
 Type: \tab Package\cr
-Version: \tab 0.1-4\cr
-Date: \tab 2008-08-15\cr
+Version: \tab 0.1-6\cr
+Date: \tab 2010-01-11\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -25,14 +27,13 @@ LazyLoad: \tab yes\cr
 
  n.welch.test(): sample size for Student's t.test with Welch approximation
  
- n.wilcox.w.ties(): sample size for Wilcoxon-Mann-Whitney test with ties
-
- n.wilcox.no.ties(): sample size for Wilcoxon-Mann-Whitney test without ties
+ n.wilcox.ord(): sample size for Wilcoxon-Mann-Whitney test with and
+ without ties
 }
 \author{
 Ralph Scherer
 
-Maintainer: Ralph Scherer <scherer@biostat.uni-hannover.de>
+Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
 }
 \references{
  Bock J., Bestimmung des Stichprobenumfangs fuer biologische Experimente und kontrollierte klinische Studien. Oldenbourg 1998

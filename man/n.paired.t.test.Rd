@@ -25,7 +25,7 @@
 %
 % ~Make other sections like Warning with \section{Warning }{....} ~
 %}
-\seealso{n.inep.t.test.eq(), n.inep.t.test.neq(), n.welch.test()}
+\seealso{n.indep.t.test.eq(), n.indep.t.test.neq(), n.welch.test()}
 \examples{
  n.paired.t.test(power = 0.8, alpha = 0.95, mean.diff = 0.8, sd.est = 0.83)
 }

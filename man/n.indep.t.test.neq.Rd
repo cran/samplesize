@@ -25,6 +25,6 @@ n.indep.t.test.neq(power = 0.8, alpha = 0.95, mean.diff = 0.8, sd.est = 0.83, k 
 }
 \references{Bock J., Bestimmung des Stichprobenumfangs fuer biologische Experimente und kontrollierte klinische Studien. Oldenbourg 1998}
 \author{Ralph Scherer}
-\seealso{n.inep.t.test.eq(), n.paired.t.test(), n.welch.test()}
+\seealso{n.indep.t.test.eq(), n.paired.t.test(), n.welch.test()}
 \examples{n.indep.t.test.neq(power = 0.8, alpha = 0.95, mean.diff = 0.8, sd.est = 0.83, k = 0.5)}
 \keyword{htest}
