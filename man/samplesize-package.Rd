@@ -2,8 +2,7 @@
 \alias{samplesize-package}
 \docType{package}
 \title{
- Computes sample size for Student's t-test, Student's t-test with Welch
- approximation and Wilcoxon-Mann-Whitney test on ordinal data
+ Computes sample size for several two-sample tests
 }
 \description{
  Computes sample size for independent and paired Student's t-test,
@@ -14,8 +13,8 @@
 \tabular{ll}{
 Package: \tab samplesize\cr
 Type: \tab Package\cr
-Version: \tab 0.1-6\cr
-Date: \tab 2010-01-11\cr
+Version: \tab 0.1-7\cr
+Date: \tab 2010-03-19\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
