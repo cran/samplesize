@@ -2,15 +2,15 @@
 \alias{n.wilcox.ord}
 \title{Sample size for Wilcoxon-Mann-Whitney for ordinal data}
 \description{
-  Function computes sample size for two-sided Wilcoxon test when applied to two independent samples with ordered categorical response.
+  Function computes sample size for the two-sided Wilcoxon test when applied to two independent samples with ordered categorical responses.
 }
 \usage{
-n.wilcox.ord(beta = 0.2, alpha = 0.05, t, p, q)
+n.wilcox.ord(power = 0.8, alpha = 0.05, t, p, q)
 }
 
 \arguments{
-  \item{beta}{required type-II-error level}
-  \item{alpha}{required type-I-error level}
+  \item{power}{required Power}
+  \item{alpha}{required two-sided Type-I-error level}
   \item{t}{sample size fraction n/N, where n is sample size of group B and N is the total sample size}
   \item{p}{vector of expected proportions of the categories in group A, should sum to 1}
   \item{q}{vector of expected proportions of the categories in group B, should be of equal length as p and should sum to 1}
@@ -21,14 +21,16 @@ This function approximates the total sample size, N, needed for the two-sided Wi
 }
 
 \value{
-  \item{N}{Total sample size}
+  \item{total sample size}{Total sample size}
+  \item{m}{Sample size group 1}
+  \item{n}{Sample size group 2}
 }
 \references{Zhao YD, Rahardja D, Qu Yongming. Sample size calculation for the Wilcoxon-Mann-Whitney test adjsuting for ties. Statistics in Medicine 2008; 27:462-468}
 \author{Ralph Scherer}
 \examples{
 ## example out of:
 ## Zhao YD, Rahardja D, Qu Yongming. Sample size calculation for the Wilcoxon-Mann-Whitney test adjsuting for ties. Statistics in Medicine 2008; 27:462-468
-n.wilcox.ord(beta = 0.2, alpha = 0.05, t = 0.53, p = c(0.66, 0.15, 0.19), q = c(0.61, 0.23, 0.16))
+n.wilcox.ord(power = 0.8, alpha = 0.05, t = 0.53, p = c(0.66, 0.15, 0.19), q = c(0.61, 0.23, 0.16))
 }
 \keyword{htest}
 \keyword{nonparametric}

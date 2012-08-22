@@ -1,12 +1,12 @@
-`n.wilcox.ord` <-
-    function(beta = 0.2, alpha = 0.05, t, p, q)
+n.wilcox.ord <-
+function(power = 0.8, alpha = 0.05, t, p, q)
 {
     t = t
     q = q
     p = p
-    if(beta <= 0 | beta >= 1)
+    if(power <= 0 | power >= 1)
  {
-     stop("beta must be a numeric value between 0 and 1")
+     stop("Power must be a numeric value between 0 and 1")
  }
  if(alpha <= 0 | alpha >= 1)
  {
@@ -38,7 +38,7 @@ if(abs(sq-1) > .Machine$double.eps * 10)
 }
 alpha_half= alpha/ 2
 Z1 <- qnorm(alpha_half)
-Z2 <- qnorm(beta)
+Z2 <- qnorm(1 - power)
 pq1 <- function(p, q)
 {
     D <- length(p)
@@ -57,7 +57,8 @@ t.sum <- sum(pq.t.3)
 pq <- cbind(p,q)
 pq.sum <- sum(apply(pq, 1, prod))
 N <- (((Z1 + Z2)^2) * (1 - t.sum)) / (12 * t * (1 - t)*(pq1(p = p, q = q) + 0.5 * pq.sum - 0.5)^2)
-samplesize <- N
-return(list(N = samplesize))
+samplesize <- ceiling(N)
+m <- round(ceiling(N) * (1 - t), 0)
+n <- round(ceiling(N) * t, 0)
+return(list("total sample size" = samplesize, "m" = m, "n" = n))
 }
-
