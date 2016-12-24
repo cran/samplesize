@@ -1,8 +1,7 @@
-6be2bda7b6a386239518d698c48ab3db *DESCRIPTION
+b6ceae1753f46312262e9ca2ef88f41a *DESCRIPTION
 e8ce6b7b142e80e640a8d08bc6d72226 *NAMESPACE
-c1458699c2207541e4f428ea6696d3c0 *R/n.ttest.R
+586d1bb7024a08b6eda47087f0f37391 *R/n.ttest.R
 c58a43877e04ba0d6fe8e2fcaa0c0faa *R/n.wilcox.ord.R
-0a5cadeeb872ba2bf7301b5003817323 *README.md
-5ea8cd45a10c4eb18a05a0cde2f9369a *man/n.ttest.Rd
+020a0eda4258c9be373f23eb2dae016e *man/n.ttest.Rd
 ad0c10b6bf94392d798a5ab17d83df4e *man/n.wilcox.ord.Rd
-ad25a6fd06e0b5191745c29286f69c46 *man/samplesize-package.Rd
+2e8fb3ff64bba9fca051fe4488db0128 *man/samplesize-package.Rd
